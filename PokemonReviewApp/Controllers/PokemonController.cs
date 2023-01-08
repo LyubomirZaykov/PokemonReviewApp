@@ -49,6 +49,8 @@ namespace PokemonReviewApp.Controllers
             return Ok(pokemon);
         }
 
+       
+
         [HttpGet("{pokeId}/rating")]
         [ProducesResponseType(200, Type = typeof(decimal))]
         [ProducesResponseType(400)]

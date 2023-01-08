@@ -42,5 +42,10 @@ namespace PokemonReviewApp.Repository
         {
             return this.context.Pokemons.Any(p => p.Id == pokeId);
         }
+
+        public bool PokemonExists(string pokeName)
+        {
+            return this.context.Pokemons.Any(p => p.Name == pokeName);
+        }
     }
 }
